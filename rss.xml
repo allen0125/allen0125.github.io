@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 21 May 2020 14:45:46 GMT</lastBuildDate><item><title><![CDATA[《Python 人脸识别从入门到工程实践》阅读与实践笔记]]></title><description><![CDATA[写人脸识别相关技术的文章，书籍在网上已经很多了，但是大部分内容都是从0开始到完成一个
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 21 May 2020 15:05:00 GMT</lastBuildDate><item><title><![CDATA[《Python 人脸识别从入门到工程实践》阅读与实践笔记]]></title><description><![CDATA[写人脸识别相关技术的文章，书籍在网上已经很多了，但是大部分内容都是从0开始到完成一个
 小型的 Demo 就结束了，这篇 blog 的重点就是通过阅读《Python…]]></description><link>http://allen0125.github.io/python-face-recognition/</link><guid isPermaLink="false">http://allen0125.github.io/python-face-recognition/</guid><pubDate>Thu, 21 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;写人脸识别相关技术的文章，书籍在网上已经很多了，但是大部分内容都是从0开始到完成一个
 小型的 Demo 就结束了，这篇 blog 的重点就是通过阅读《Python 人脸识别从入门到工程实践》
 并且结合实际场景发现的大多数文章当中没有提到的人脸识别里面有哪些坑。并且推测下为什么
 有这么多开源的人脸识别相关的项目，有这么多论文，书籍来写人脸识别技术，还需要Face++、
 商汤、百度、阿里等等等等这些人脸识别技术的供应商。&lt;/p&gt;
-&lt;p&gt;先大概介绍下应用场景：人脸检测+体温检测系统&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;具体的应用是：人脸检测+体温检测系统&lt;/p&gt;</content:encoded></item></channel></rss>
