@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 22 May 2020 02:37:42 GMT</lastBuildDate><item><title><![CDATA[《Python 人脸识别从入门到工程实践》阅读与实践笔记]]></title><description><![CDATA[写人脸识别相关技术的文章，书籍在网上已经很多了，但是大部分内容都是从0开始到完成一个
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 22 May 2020 03:47:59 GMT</lastBuildDate><item><title><![CDATA[使用 Scrapy 分布式爬取豆瓣图书数据]]></title><description><![CDATA[先简单的列一下需求： 一切都需要遵守豆瓣 robots.txt 使用付费代理IP，每换一次 IP 都需要 Slack Bot 通知一次，方便了解 IP 使用情况，
+也可以做一个监控面板，来统计。 付费代理 IP…]]></description><link>http://allen0125.github.io/douban_spider/</link><guid isPermaLink="false">http://allen0125.github.io/douban_spider/</guid><pubDate>Fri, 22 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;先简单的列一下需求：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一切都需要遵守豆瓣 robots.txt&lt;/li&gt;
+&lt;li&gt;使用付费代理IP，每换一次 IP 都需要 Slack Bot 通知一次，方便了解 IP 使用情况，
+也可以做一个监控面板，来统计。&lt;/li&gt;
+&lt;li&gt;付费代理 IP 余额预警，通过设定余额阈值进行余额报警。&lt;/li&gt;
+&lt;li&gt;分布式，支持断点续爬的爬虫 （为了练习 Hadoop Spark 做数据准备）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;之前做过图书馆管理系统，做过 DropKindle 其实都需要图书的基础数据，这些基础数据就需要用爬虫来
+获取了（在爬取豆瓣的图书数据的过程当中我发现豆瓣的很多图书图书数据还是爬的当当的QAQ）。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[《Python 人脸识别从入门到工程实践》阅读与实践笔记]]></title><description><![CDATA[写人脸识别相关技术的文章，书籍在网上已经很多了，但是大部分内容都是从0开始到完成一个
 小型的 Demo 就结束了，这篇 blog 的重点就是通过阅读《Python…]]></description><link>http://allen0125.github.io/python-face-recognition/</link><guid isPermaLink="false">http://allen0125.github.io/python-face-recognition/</guid><pubDate>Thu, 21 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;写人脸识别相关技术的文章，书籍在网上已经很多了，但是大部分内容都是从0开始到完成一个
 小型的 Demo 就结束了，这篇 blog 的重点就是通过阅读《Python 人脸识别从入门到工程实践》
 并且结合实际场景发现的大多数文章当中没有提到的人脸识别里面有哪些坑。并且推测下为什么
@@ -21,9 +31,9 @@
 &lt;li&gt;特征脸法:  对算力要求小，可以用于小型嵌入式平台里（我想现在应该也用的不多了吧，毕竟现在边缘计算也
 很火热，例如 Intel Movidius 这种边缘计算平台完全可以用来做嵌入式设备里面的人脸识别处理芯片。），
 但是对光线、人脸角度的要求很苛刻。&lt;/li&gt;
-&lt;li&gt;OpenCV 方法: &lt;/li&gt;
-&lt;li&gt;Dlib 人脸检测方法: &lt;/li&gt;
-&lt;li&gt;基于深度学习的人脸检测、人脸识别方法: &lt;/li&gt;
+&lt;li&gt;OpenCV 方法:&lt;/li&gt;
+&lt;li&gt;Dlib 人脸检测方法:&lt;/li&gt;
+&lt;li&gt;基于深度学习的人脸检测、人脸识别方法:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;实践笔记&lt;/h3&gt;
 &lt;p&gt;Todo..&lt;/p&gt;</content:encoded></item></channel></rss>
