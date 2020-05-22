@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 21 May 2020 15:48:05 GMT</lastBuildDate><item><title><![CDATA[《Python 人脸识别从入门到工程实践》阅读与实践笔记]]></title><description><![CDATA[写人脸识别相关技术的文章，书籍在网上已经很多了，但是大部分内容都是从0开始到完成一个
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 22 May 2020 02:37:42 GMT</lastBuildDate><item><title><![CDATA[《Python 人脸识别从入门到工程实践》阅读与实践笔记]]></title><description><![CDATA[写人脸识别相关技术的文章，书籍在网上已经很多了，但是大部分内容都是从0开始到完成一个
 小型的 Demo 就结束了，这篇 blog 的重点就是通过阅读《Python…]]></description><link>http://allen0125.github.io/python-face-recognition/</link><guid isPermaLink="false">http://allen0125.github.io/python-face-recognition/</guid><pubDate>Thu, 21 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;写人脸识别相关技术的文章，书籍在网上已经很多了，但是大部分内容都是从0开始到完成一个
 小型的 Demo 就结束了，这篇 blog 的重点就是通过阅读《Python 人脸识别从入门到工程实践》
 并且结合实际场景发现的大多数文章当中没有提到的人脸识别里面有哪些坑。并且推测下为什么
@@ -17,5 +17,13 @@
 &lt;p&gt;&lt;em&gt;《第六章 常用人脸识别算法》&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;原书目录：常用的人脸识别算法有：特征脸法、OpenCV方法、Dlib人脸检测方法、基于深度学习的图片特征提取+
 基于深度学习的人脸检测，基于深度学习的人脸识别等方法。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;特征脸法:  对算力要求小，可以用于小型嵌入式平台里（我想现在应该也用的不多了吧，毕竟现在边缘计算也
+很火热，例如 Intel Movidius 这种边缘计算平台完全可以用来做嵌入式设备里面的人脸识别处理芯片。），
+但是对光线、人脸角度的要求很苛刻。&lt;/li&gt;
+&lt;li&gt;OpenCV 方法: &lt;/li&gt;
+&lt;li&gt;Dlib 人脸检测方法: &lt;/li&gt;
+&lt;li&gt;基于深度学习的人脸检测、人脸识别方法: &lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;实践笔记&lt;/h3&gt;
 &lt;p&gt;Todo..&lt;/p&gt;</content:encoded></item></channel></rss>
