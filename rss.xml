@@ -1,4 +1,106 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 30 Nov 2020 11:15:08 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>http://allen0125.github.io/motorcycle-driving-licence/</link><guid isPermaLink="false">http://allen0125.github.io/motorcycle-driving-licence/</guid><content:encoded></content:encoded></item><item><title><![CDATA[读《深入理解 Hadoop》第一天]]></title><description><![CDATA[创建 3 个 Linode 节点并完成 Hadoop 的搭建 还是没能忍住，想在开始学之前就给自己搭建一套能用的 Hadoop 集群，倒是也好，先搭建一套出来跑通了，
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Dec 2020 04:48:13 GMT</lastBuildDate><item><title><![CDATA[驾照增驾D摩托车驾驶资格过程回顾]]></title><description><![CDATA[为什么想要增驾D？ 小时候坐过我爸摩托的油箱上面，我爸给我买过小朋友的头盔，从小就喜欢。 现在有自行车，骑长途最多就骑过30公里，菜腿已经很累了。 周末骑摩托去郊区吹风，想想就很棒。 在北京没有汽车/新能源指标，京B的摩托相对容易Get，京A…]]></description><link>http://allen0125.github.io/motorcycle-driving-licence/</link><guid isPermaLink="false">http://allen0125.github.io/motorcycle-driving-licence/</guid><pubDate>Sun, 06 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/44fbc11352aed3a457ebb5925d73dc07/d2602/IMG_0530.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABWyKnSE0r/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQMAAgQTIf/aAAgBAQABBQJFQwHKuAVEU3lDqMt7b//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAEDAQE/AYf/xAAWEQEBAQAAAAAAAAAAAAAAAAABAhD/2gAIAQIBAT8Bppc//8QAGhAAAgIDAAAAAAAAAAAAAAAAAAERQSExMv/aAAgBAQAGPwJ0bMtjUWcoln//xAAcEAEAAgIDAQAAAAAAAAAAAAABABExUSFBYZH/2gAIAQEAAT8hCVsd1Nr8hVFR1LC3fUE0MjhZyFBXE//aAAwDAQACAAMAAAAQpA//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QDFjf/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARMf/aAAgBAgEBPxBBnIS//8QAHBABAQACAgMAAAAAAAAAAAAAAREAITFxYaGx/9oACAEBAAE/ELeaIQr4317yNpUghI4sawQo+5sYoZEmsQsIbBDLaWPLW+s//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Licence Got&quot;
+        title=&quot;Licence Got&quot;
+        src=&quot;/static/44fbc11352aed3a457ebb5925d73dc07/1c72d/IMG_0530.jpg&quot;
+        srcset=&quot;/static/44fbc11352aed3a457ebb5925d73dc07/a80bd/IMG_0530.jpg 148w,
+/static/44fbc11352aed3a457ebb5925d73dc07/1c91a/IMG_0530.jpg 295w,
+/static/44fbc11352aed3a457ebb5925d73dc07/1c72d/IMG_0530.jpg 590w,
+/static/44fbc11352aed3a457ebb5925d73dc07/a8a14/IMG_0530.jpg 885w,
+/static/44fbc11352aed3a457ebb5925d73dc07/fbd2c/IMG_0530.jpg 1180w,
+/static/44fbc11352aed3a457ebb5925d73dc07/d2602/IMG_0530.jpg 4032w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;为什么想要增驾D？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;小时候坐过我爸摩托的油箱上面，我爸给我买过小朋友的头盔，从小就喜欢。&lt;/li&gt;
+&lt;li&gt;现在有自行车，骑长途最多就骑过30公里，菜腿已经很累了。&lt;/li&gt;
+&lt;li&gt;周末骑摩托去郊区吹风，想想就很棒。&lt;/li&gt;
+&lt;li&gt;在北京没有汽车/新能源指标，京B的摩托相对容易Get，京A的摩托车指标也可以合法交易。&lt;/li&gt;
+&lt;li&gt;操纵机械的快感。&lt;/li&gt;
+&lt;li&gt;衣食住行里的行能得到一部分的解决。&lt;/li&gt;
+&lt;li&gt;其实还有很多~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;为什么选择D？&lt;/h3&gt;
+&lt;p&gt;因为我想骑跨子，在没考得驾照之前我想我之后会偶尔骑跨子接送我闺女（为什么不是儿子？我想要闺女啊）
+上幼儿园，她一定是全幼儿园最酷的仔。&lt;/p&gt;
+&lt;p&gt;关于这个想法，我在满分通过科目四等着拿驾照的时候还和其它学院坐在一起吹牛皮，讨论为什么选D不选E
+的时候我就说了我这个想法，然后之前我还吹了自己科目四满分通过的牛皮。然后大家就问我科目四没背
+摩托车不能带12岁一下儿童的题吗？当时我就尴尬了（&lt;/p&gt;
+&lt;p&gt;以上是学D的一部分原因，更多的原因其实是觉得D范围大，做事情的资格这种事情当然是范围越大越好吧？&lt;/p&gt;
+&lt;h3&gt;在北京怎么选择的驾校？&lt;/h3&gt;
+&lt;p&gt;我的C1是在龙泉驾校学的，C1学习的过程很顺利，教练的应试教育教的很好，我也没有补考过，约车通过
+报名的教练约也没多操心过，然后和薰姐（推特上的一个大佬）聊天的过程中得知他（咦，不对劲）也是
+在龙泉驾校学的，然后我就直接选择了龙泉驾校了。&lt;/p&gt;
+&lt;h3&gt;学习的过程大概是怎样的？&lt;/h3&gt;
+&lt;p&gt;摩托车增驾也有四个科目，并且我考科目二、三还遇到了新换的电子监考，更难了一些。&lt;/p&gt;
+&lt;h4&gt;科目一、科目四背题-考试&lt;/h4&gt;
+&lt;p&gt;和C1类似，只不过是50道题了，更加Easy，这个就不多说了。&lt;/p&gt;
+&lt;h4&gt;科目二、科目三练习&lt;/h4&gt;
+&lt;p&gt;第一天去科目二的时候，练习和考试车都是嘉陵的跨子，教练教了如何启动，离合、油门、前轮刹车、后轮刹车、加减档、如何换档等操作
+然后开始练习启动、挂挡、起步、绕圈；大概练习了2个小时后，到了科目二考试练习场地，又换了个教练，
+教了坡道停车、坡道起步、单边桥、绕桩；其中我觉得最难的就是绕桩了，跨子绕桩本身车身就很宽，然后桩
+之间的距离还很窄。&lt;/p&gt;
+&lt;p&gt;科目三就是按照流程走一遍，流程如下图所示，不要做错、熄火、长时间半离合就没什么问题。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b8289507d3abb2ddceb911787af50eaa/669cd/IMG_0523.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 133.1081081081081%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Licence Got&quot;
+        title=&quot;Licence Got&quot;
+        src=&quot;/static/b8289507d3abb2ddceb911787af50eaa/fcda8/IMG_0523.png&quot;
+        srcset=&quot;/static/b8289507d3abb2ddceb911787af50eaa/12f09/IMG_0523.png 148w,
+/static/b8289507d3abb2ddceb911787af50eaa/e4a3f/IMG_0523.png 295w,
+/static/b8289507d3abb2ddceb911787af50eaa/fcda8/IMG_0523.png 590w,
+/static/b8289507d3abb2ddceb911787af50eaa/efc66/IMG_0523.png 885w,
+/static/b8289507d3abb2ddceb911787af50eaa/c83ae/IMG_0523.png 1180w,
+/static/b8289507d3abb2ddceb911787af50eaa/669cd/IMG_0523.png 3024w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;龙泉驾校约考还比较麻烦，我约了很久，我是剩下两次练车的时候约的考试，我考试约在了周一，约到考试之后
+我在周六周日练了两天，然后周一考试还是很紧张，不过好再过了。&lt;/p&gt;
+&lt;p&gt;科目二、科目三都是一把就通过了，通过了之后就回到了驾校开始背科目四的题，下午1点半左右的时候花了
+10几分钟满分通过了科目四。然后四点就拿到了新的驾照。&lt;/p&gt;
+&lt;h3&gt;旧驾照怎么换的新驾照&lt;/h3&gt;
+&lt;p&gt;驾校在考科目四之前收了两张一寸白底免冠带镜框的照片旧驾照以及驾照副页，带镜框是因为我近视，必须要有个体现；
+之前驾照的夹子留在了自己手里，然后在考完科目四之后给发了新的驾照、副页，并且还有新的驾照夹。
+驾照上的准驾车型更新到了C1D，扣分周期不变，副页备注了增驾D的实习周期。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[读《深入理解 Hadoop》第一天]]></title><description><![CDATA[创建 3 个 Linode 节点并完成 Hadoop 的搭建 还是没能忍住，想在开始学之前就给自己搭建一套能用的 Hadoop 集群，倒是也好，先搭建一套出来跑通了，
 然后在学习的过程中会对搭建的每一步都有更加深刻的理解和认识，所以我参考 Linode…]]></description><link>http://allen0125.github.io/linode_set_up_hadoop_cluster/</link><guid isPermaLink="false">http://allen0125.github.io/linode_set_up_hadoop_cluster/</guid><pubDate>Tue, 26 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;创建 3 个 Linode 节点并完成 Hadoop 的搭建&lt;/h3&gt;
 &lt;p&gt;还是没能忍住，想在开始学之前就给自己搭建一套能用的 Hadoop 集群，倒是也好，先搭建一套出来跑通了，
 然后在学习的过程中会对搭建的每一步都有更加深刻的理解和认识，所以我参考 Linode 官方示例完成了
