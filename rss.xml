@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Dec 2020 05:00:24 GMT</lastBuildDate><item><title><![CDATA[驾照增驾D摩托车驾驶资格过程回顾]]></title><description><![CDATA[为什么想要增驾D？ 小时候坐过我爸摩托的油箱上面，我爸给我买过小朋友的头盔，从小就喜欢。 现在有自行车，骑长途最多就骑过30公里，菜腿已经很累了。 周末骑摩托去郊区吹风，想想就很棒。 在北京没有汽车/新能源指标，京B的摩托相对容易Get，京A…]]></description><link>http://allen0125.github.io/motorcycle-driving-licence/</link><guid isPermaLink="false">http://allen0125.github.io/motorcycle-driving-licence/</guid><pubDate>Sun, 06 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 22 Mar 2021 10:27:11 GMT</lastBuildDate><item><title><![CDATA[驾照增驾D摩托车驾驶资格过程回顾]]></title><description><![CDATA[为什么想要增驾D？ 小时候坐过我爸摩托的油箱上面，我爸给我买过小朋友的头盔，从小就喜欢。 现在有自行车，骑长途最多就骑过30公里，菜腿已经很累了。 周末骑摩托去郊区吹风，想想就很棒。 在北京没有汽车/新能源指标，京B的摩托相对容易Get，京A…]]></description><link>http://allen0125.github.io/motorcycle-driving-licence/</link><guid isPermaLink="false">http://allen0125.github.io/motorcycle-driving-licence/</guid><pubDate>Sun, 06 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
@@ -188,4 +188,20 @@ Vargnet / Docker 服务，创建和删除都很方便，付费只需要按照用
 &lt;li&gt;基于深度学习的人脸检测、人脸识别方法: &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;实践笔记&lt;/h3&gt;
-&lt;p&gt;Todo..&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;Todo..&lt;/p&gt;</content:encoded></item><item><title><![CDATA[记录一次VPS被黑后长记心的过程]]></title><description><![CDATA[昨天去看了下我在海星云上不怎么用的那台VPS，然后发现了流量超出被暂停了，被暂停了是看不到每天流量进出口监控，所以我发了工单问了下是什么情况，大概就是3月3号的时候突然的VPS出口流量很多，估计是被用来做肉鸡然后去DDNS…]]></description><link>http://allen0125.github.io/vps_ security/</link><guid isPermaLink="false">http://allen0125.github.io/vps_ security/</guid><pubDate>Mon, 16 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨天去看了下我在海星云上不怎么用的那台VPS，然后发现了流量超出被暂停了，被暂停了是看不到每天流量进出口监控，所以我发了工单问了下是什么情况，大概就是3月3号的时候突然的VPS出口流量很多，估计是被用来做肉鸡然后去DDNS别人了吧。&lt;/p&gt;
+&lt;p&gt;客服在看了流量是别黑没的之后好心的给我加了400G，然后要求我在一个小时内解决掉被挂上的马。&lt;/p&gt;
+&lt;p&gt;对于我这种运维渣渣来说，根本没有解决这种问题的经验，现在回头想下应该留一个快照之后研究用。没有了实战环境那就学着从多个方面来提升VPS的安全程度就好了。通过阅读资料我了解到了以下这些保证服务器安全的方法：&lt;/p&gt;
+&lt;p&gt;1: SSH 相关安全
+2: 防火墙相关安全
+3: rootkit 相关安全&lt;/p&gt;
+&lt;p&gt;在重新安装系统之后，我把本地的SSH也替换了一遍，之前是 RSA 的 SSH Key，现在换成了 ED25519 公、私钥更短，但是更加安全，是RSA安全性的10倍，更换了本地SSH Key之后我开始设置 VPS 上的SSH配置，SSH 配置修改了以下几部分&lt;/p&gt;
+&lt;p&gt;1: 替换默认22端口，改为其它端口。
+2: 创建新用户，加入 sudo 用户组，用户密码用1Password生成保证唯一。
+3: ssh-copy-id 给新建的用户添加上 SSH 公钥
+4: 禁止root用户登录
+5: 3次密码失败等待，10次密码失败ban IP fail2ban&lt;/p&gt;
+&lt;p&gt;完成SSH相关安全配置之后就开始搞防火墙
+iptables的配置对我来说还挺麻烦的，所以我就用ufw来进行防火墙的配置了，ufw配置起来和各种云服务的防火墙配置感觉类似，allow端口或者deny端口就好了。配置防火墙需要注意的是一定要先把 SSH 的端口打开，不然忘记这个可真的就要翻车了。然后就是需要哪些端口再打开哪些端口，其他的一律禁止就好了。我现在就只打开了SSH的端口和80端口，毕竟是新装的系统，装了个nginx测试下防火墙的效果，并且nginx之后还是会用到的。&lt;/p&gt;
+&lt;p&gt;rootkit是我刚从鸟哥的网站上了解到的内容，鸟哥网站上关于rootkit相关的内容其实有些旧了，看下了解下什么是rootkit，如何来应对就好，实际遇到问题的时候还是多参考官方手册就能解决掉绝大多数的问题。&lt;/p&gt;
+&lt;p&gt;检查VPS当中是否有rootkit主要用RootKit Hunter这个软件，这个软件在使用之前一定要运行 rkhunter —propupd命令来更新软件md5等数据库信息，保证数据库信息最新，避免一些不必要的Warning。&lt;/p&gt;
+&lt;p&gt;完成SSH、防火墙、rootkit相关安全配置之后其实服务器的安全程度就不错了，之后再注意及时打暴露的服务的补丁应该就可以了。&lt;/p&gt;</content:encoded></item></channel></rss>
