@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 23 Mar 2021 03:00:21 GMT</lastBuildDate><item><title><![CDATA[理解GBDT及小试牛刀]]></title><description><![CDATA[什么是GBDT？ DT－Decision Tree决策树，GB是Gradient Boosting，是一种学习策略，GBDT的含义就是用Gradient Boosting的策略训练出来的DT模型。模型的结果是一组回归分类树组合(CART Tree Ensemble)： T1…Tk…]]></description><link>http://allen0125.github.io/use_gbdt/</link><guid isPermaLink="false">http://allen0125.github.io/use_gbdt/</guid><pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;什么是GBDT？&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 23 Mar 2021 04:17:26 GMT</lastBuildDate><item><title><![CDATA[理解GBDT及小试牛刀]]></title><description><![CDATA[什么是GBDT？ DT－Decision Tree决策树，GB是Gradient Boosting，是一种学习策略，GBDT的含义就是用Gradient Boosting的策略训练出来的DT模型。模型的结果是一组回归分类树组合(CART Tree Ensemble)： T1…Tk…]]></description><link>http://allen0125.github.io/use-gbdt/</link><guid isPermaLink="false">http://allen0125.github.io/use-gbdt/</guid><pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;什么是GBDT？&lt;/h2&gt;
 &lt;p&gt;DT－Decision Tree决策树，GB是Gradient Boosting，是一种学习策略，GBDT的含义就是用Gradient Boosting的策略训练出来的DT模型。模型的结果是一组回归分类树组合(CART Tree Ensemble)： T1…Tk。其中 Tj 学习的是之前 j-1 棵树预测结果的残差，这种思想就像准备考试前的复习，先做一遍习题册，然后把做错的题目挑出来，在做一次，然后把做错的题目挑出来在做一次，经过反复多轮训练，取得最好的成绩。&lt;/p&gt;
 &lt;p&gt;而模型最后的输出，是一个样本在各个树中输出的结果的和。&lt;/p&gt;
 &lt;h2&gt;GBDT + LR ?&lt;/h2&gt;
@@ -7,6 +7,10 @@
 &lt;p&gt;这部分特征是GBDT生成的组合特征，再结合LR固有的稀疏特征，就组成了 GBDT ＋ LR 模型。生成样本向量阶段，样本首先过GBDT模型，生成组合特征部分的输入向量，再结合固有的稀疏特征向量，组成新的特征向量。&lt;/p&gt;
 &lt;p&gt;最后将GBDT特征向量与LR稀疏向量组成一个最终的特征向量，并使用该向量训练LR模型。&lt;/p&gt;
 &lt;h2&gt;实战&lt;/h2&gt;
+&lt;p&gt;实战场景为模拟文本数据分类场景，选择AG News数据集。&lt;/p&gt;
+&lt;p&gt;AG News 496,835 条来自 AG 新闻语料库 4 大类别超过 2000 个新闻源的新闻文章，数据集仅仅援用了标题和描述字段。 每个类别分别拥有 30,000 个训练样本及 1900 个测试样本。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1509.01626&quot;&gt;引文&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://s3.amazonaws.com/fast-ai-nlp/ag_news_csv.tgz&quot;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;单独训练 GBDT 查看过拟合现象:&lt;/h3&gt;
 &lt;h3&gt;结合 GBDT 和 LR 对比单独使用 GBDT 查看是否还存在过拟合现象？&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30339807&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[驾照增驾D摩托车驾驶资格过程回顾]]></title><description><![CDATA[为什么想要增驾D？ 小时候坐过我爸摩托的油箱上面，我爸给我买过小朋友的头盔，从小就喜欢。 现在有自行车，骑长途最多就骑过30公里，菜腿已经很累了。 周末骑摩托去郊区吹风，想想就很棒。 在北京没有汽车/新能源指标，京B的摩托相对容易Get，京A…]]></description><link>http://allen0125.github.io/motorcycle-driving-licence/</link><guid isPermaLink="false">http://allen0125.github.io/motorcycle-driving-licence/</guid><pubDate>Sun, 06 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
@@ -112,7 +116,7 @@
 &lt;p&gt;驾校在考科目四之前收了两张一寸白底免冠带镜框的照片旧驾照以及驾照副页，带镜框是因为我近视，必须要有个体现；
 之前驾照的夹子留在了自己手里，然后在考完科目四之后给发了新的驾照、副页，并且还有新的驾照夹。
 驾照上的准驾车型更新到了C1D，扣分周期不变，副页备注了增驾D的实习周期。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[读《深入理解 Hadoop》使用Linode搭建3节点Hadoop集群]]></title><description><![CDATA[创建 3 个 Linode 节点并完成 Hadoop 的搭建 还是没能忍住，想在开始学之前就给自己搭建一套能用的 Hadoop 集群，倒是也好，先搭建一套出来跑通了，
-然后在学习的过程中会对搭建的每一步都有更加深刻的理解和认识，所以我参考 Linode…]]></description><link>http://allen0125.github.io/linode_set_up_hadoop_cluster/</link><guid isPermaLink="false">http://allen0125.github.io/linode_set_up_hadoop_cluster/</guid><pubDate>Tue, 26 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;创建 3 个 Linode 节点并完成 Hadoop 的搭建&lt;/h3&gt;
+然后在学习的过程中会对搭建的每一步都有更加深刻的理解和认识，所以我参考 Linode…]]></description><link>http://allen0125.github.io/linode-set-up-hadoop-cluster/</link><guid isPermaLink="false">http://allen0125.github.io/linode-set-up-hadoop-cluster/</guid><pubDate>Tue, 26 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;创建 3 个 Linode 节点并完成 Hadoop 的搭建&lt;/h3&gt;
 &lt;p&gt;还是没能忍住，想在开始学之前就给自己搭建一套能用的 Hadoop 集群，倒是也好，先搭建一套出来跑通了，
 然后在学习的过程中会对搭建的每一步都有更加深刻的理解和认识，所以我参考 Linode 官方示例完成了
 三个节点的 Hadoop 集群搭建。&lt;/p&gt;
@@ -199,7 +203,7 @@ Vargnet / Docker 服务，创建和删除都很方便，付费只需要按照用
 &lt;li&gt;基于深度学习的人脸检测、人脸识别方法: &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;实践笔记&lt;/h3&gt;
-&lt;p&gt;Todo..&lt;/p&gt;</content:encoded></item><item><title><![CDATA[记录一次VPS被黑后长记心的过程]]></title><description><![CDATA[昨天去看了下我在海星云上不怎么用的那台VPS，然后发现了流量超出被暂停了，被暂停了是看不到每天流量进出口监控，所以我发了工单问了下是什么情况，大概就是3月3号的时候突然的VPS出口流量很多，估计是被用来做肉鸡然后去DDNS…]]></description><link>http://allen0125.github.io/vps_ security/</link><guid isPermaLink="false">http://allen0125.github.io/vps_ security/</guid><pubDate>Mon, 16 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨天去看了下我在海星云上不怎么用的那台VPS，然后发现了流量超出被暂停了，被暂停了是看不到每天流量进出口监控，所以我发了工单问了下是什么情况，大概就是3月3号的时候突然的VPS出口流量很多，估计是被用来做肉鸡然后去DDNS别人了吧。&lt;/p&gt;
+&lt;p&gt;Todo..&lt;/p&gt;</content:encoded></item><item><title><![CDATA[记录一次VPS被黑后长记心的过程]]></title><description><![CDATA[昨天去看了下我在海星云上不怎么用的那台VPS，然后发现了流量超出被暂停了，被暂停了是看不到每天流量进出口监控，所以我发了工单问了下是什么情况，大概就是3月3号的时候突然的VPS出口流量很多，估计是被用来做肉鸡然后去DDNS…]]></description><link>http://allen0125.github.io/vps-security/</link><guid isPermaLink="false">http://allen0125.github.io/vps-security/</guid><pubDate>Mon, 16 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨天去看了下我在海星云上不怎么用的那台VPS，然后发现了流量超出被暂停了，被暂停了是看不到每天流量进出口监控，所以我发了工单问了下是什么情况，大概就是3月3号的时候突然的VPS出口流量很多，估计是被用来做肉鸡然后去DDNS别人了吧。&lt;/p&gt;
 &lt;p&gt;客服在看了流量是别黑没的之后好心的给我加了400G，然后要求我在一个小时内解决掉被挂上的马。&lt;/p&gt;
 &lt;p&gt;对于我这种运维渣渣来说，根本没有解决这种问题的经验，现在回头想下应该留一个快照之后研究用。没有了实战环境那就学着从多个方面来提升VPS的安全程度就好了。通过阅读资料我了解到了以下这些保证服务器安全的方法：&lt;/p&gt;
 &lt;p&gt;1: SSH 相关安全
