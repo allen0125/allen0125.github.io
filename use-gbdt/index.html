@@ -22,7 +22,7 @@
 <p>数据集本身就划分了训练集及测试集，所以在数据处理过程中无需在切分数据。完成数据转换向量之后即可开始搭建模型进行训练及验证。</p>
 <h3>单独训练 GBDT 查看过拟合现象:</h3>
 <p>2021-3-24 : <em>Train的真的是太慢了…是我数据集选大了吗？剩下的部分等我慢慢跑…</em></p>
-<p>2021-3-35 : 跑出一个GBDT模型了，没有写参数用sklearn自带的GBDT来跑，把词袋换成了HashingVectorizer处理之后训练速度提升超级明显。我来研究下HashingVectorizer和CountVectorizer都是怎么实现的，去看看源码，源码有趣，原理倒是明白。(这篇博客进度  危)</p>
+<p>2021-3-35 : 跑出一个GBDT模型了，没有写参数用sklearn自带的GBDT来跑，把词袋换成了HashingVectorizer处理之后训练速度提升超级明显。我来研究下HashingVectorizer和CountVectorizer都是怎么实现的，去看看源码，源码有趣，原理倒是明白。(这篇博客进度  危)。贴个这两部个类的<a href="https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/feature_extraction/text.py">源码地址</a>吧</p>
 <p>TODO</p>
 <h3>结合 GBDT 和 LR 对比单独使用 GBDT 查看是否还存在过拟合现象：</h3>
 <p>TODO</p>

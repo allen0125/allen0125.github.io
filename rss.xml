@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 25 Mar 2021 12:13:44 GMT</lastBuildDate><item><title><![CDATA[理解GBDT及小试牛刀]]></title><description><![CDATA[什么是GBDT？ DT－Decision Tree决策树，GB是Gradient Boosting，是一种学习策略，GBDT的含义就是用Gradient Boosting的策略训练出来的DT模型。模型的结果是一组回归分类树组合(CART Tree Ensemble)： T1…Tk…]]></description><link>http://allen0125.github.io/use-gbdt/</link><guid isPermaLink="false">http://allen0125.github.io/use-gbdt/</guid><pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;什么是GBDT？&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 25 Mar 2021 12:22:40 GMT</lastBuildDate><item><title><![CDATA[理解GBDT及小试牛刀]]></title><description><![CDATA[什么是GBDT？ DT－Decision Tree决策树，GB是Gradient Boosting，是一种学习策略，GBDT的含义就是用Gradient Boosting的策略训练出来的DT模型。模型的结果是一组回归分类树组合(CART Tree Ensemble)： T1…Tk…]]></description><link>http://allen0125.github.io/use-gbdt/</link><guid isPermaLink="false">http://allen0125.github.io/use-gbdt/</guid><pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;什么是GBDT？&lt;/h2&gt;
 &lt;p&gt;DT－Decision Tree决策树，GB是Gradient Boosting，是一种学习策略，GBDT的含义就是用Gradient Boosting的策略训练出来的DT模型。模型的结果是一组回归分类树组合(CART Tree Ensemble)： T1…Tk。其中 Tj 学习的是之前 j-1 棵树预测结果的残差，这种思想就像准备考试前的复习，先做一遍习题册，然后把做错的题目挑出来，在做一次，然后把做错的题目挑出来在做一次，经过反复多轮训练，取得最好的成绩。&lt;/p&gt;
 &lt;p&gt;而模型最后的输出，是一个样本在各个树中输出的结果的和。&lt;/p&gt;
 &lt;h2&gt;GBDT + LR ?&lt;/h2&gt;
@@ -17,7 +17,7 @@
 &lt;p&gt;数据集本身就划分了训练集及测试集，所以在数据处理过程中无需在切分数据。完成数据转换向量之后即可开始搭建模型进行训练及验证。&lt;/p&gt;
 &lt;h3&gt;单独训练 GBDT 查看过拟合现象:&lt;/h3&gt;
 &lt;p&gt;2021-3-24 : &lt;em&gt;Train的真的是太慢了…是我数据集选大了吗？剩下的部分等我慢慢跑…&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;2021-3-35 : 跑出一个GBDT模型了，没有写参数用sklearn自带的GBDT来跑，把词袋换成了HashingVectorizer处理之后训练速度提升超级明显。我来研究下HashingVectorizer和CountVectorizer都是怎么实现的，去看看源码，源码有趣，原理倒是明白。(这篇博客进度  危)&lt;/p&gt;
+&lt;p&gt;2021-3-35 : 跑出一个GBDT模型了，没有写参数用sklearn自带的GBDT来跑，把词袋换成了HashingVectorizer处理之后训练速度提升超级明显。我来研究下HashingVectorizer和CountVectorizer都是怎么实现的，去看看源码，源码有趣，原理倒是明白。(这篇博客进度  危)。贴个这两部个类的&lt;a href=&quot;https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/feature_extraction/text.py&quot;&gt;源码地址&lt;/a&gt;吧&lt;/p&gt;
 &lt;p&gt;TODO&lt;/p&gt;
 &lt;h3&gt;结合 GBDT 和 LR 对比单独使用 GBDT 查看是否还存在过拟合现象：&lt;/h3&gt;
 &lt;p&gt;TODO&lt;/p&gt;
