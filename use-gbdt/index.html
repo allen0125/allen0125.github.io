@@ -16,8 +16,16 @@
 <p>AG News 496,835 条来自 AG 新闻语料库 4 大类别超过 2000 个新闻源的新闻文章，数据集仅仅援用了标题和描述字段。 每个类别分别拥有 30,000 个训练样本及 1900 个测试样本。</p>
 <p><a href="https://arxiv.org/abs/1509.01626">引文</a></p>
 <p><a href="https://s3.amazonaws.com/fast-ai-nlp/ag_news_csv.tgz">下载地址</a></p>
+<h3>数据处理，文本转换向量</h3>
+<p>由于选用的数据为英文语料数据，所以不存在中文语料数据的切词问题，大大简化了数据处理过程与数据处理复杂程度。为了练习数据处理，这次数据处理使用三种方法：1、使用sklearn完成tf-idf的词袋模型，2、使 用gensim  的word2vec 工具完成数据转换为数据向量，3、使用keras-bert完成数据转换。</p>
+<p>完成数据处理后将得到三份特征数据，3份特征数据分别使用GBDT和GBDT+LR进行分类训练，得到6个分类模型，最后可以进行多维度对比。</p>
+<p>数据集本身就划分了训练集及测试集，所以在数据处理过程中无需在切分数据。完成数据转换向量之后即可开始搭建模型进行训练及验证。</p>
 <h3>单独训练 GBDT 查看过拟合现象:</h3>
-<h3>结合 GBDT 和 LR 对比单独使用 GBDT 查看是否还存在过拟合现象？</h3>
+<p>TODO</p>
+<h3>结合 GBDT 和 LR 对比单独使用 GBDT 查看是否还存在过拟合现象：</h3>
+<p>TODO</p>
+<h3>多种模型多维度对比：</h3>
+<p>TODO</p>
 <p><a href="https://zhuanlan.zhihu.com/p/30339807">参考</a></p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUEA//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAbMSzgNTGOc4O4P/xAAbEAACAgMBAAAAAAAAAAAAAAABAgMEABIUMf/aAAgBAQABBQI+R1ycgXWFnVB0RtiXAReJ2UBxEzFf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRAAAgICAwEAAAAAAAAAAAAAAAECESExYXGBof/aAAgBAQAGPwJ1suayRTLk6JO6r6ZSXpHqx8JsbUnHOon/xAAeEAEAAgICAwEAAAAAAAAAAAABABEhMUFRYXGB8f/aAAgBAQABPyEuphiUlq2ReI2ZpKiBqF78N36T41vxBGOL07iglNqctwka9An/2gAMAwEAAgADAAAAEDMAAP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB0QAQEAAwADAQEAAAAAAAAAAAERACExQVFxYaH/2gAIAQEAAT8QQEkrfDNf3AaQ+wbVX3cfoKxt1Wb+ZZcoK9fRj8CUSIe/rkMArooJmvGqx2oVdCESj00YJfmzDSnJ+ExIHGwOjgjn/9k=" alt="Allen Wang" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/60419a4af1b1cc4f1b4e0c99ca5457c2/99438/profile-pic.jpg 1x,
 /static/60419a4af1b1cc4f1b4e0c99ca5457c2/aba1d/profile-pic.jpg 1.5x,
 /static/60419a4af1b1cc4f1b4e0c99ca5457c2/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/60419a4af1b1cc4f1b4e0c99ca5457c2/99438/profile-pic.jpg 1x,

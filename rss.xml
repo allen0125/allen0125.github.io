@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 23 Mar 2021 04:17:26 GMT</lastBuildDate><item><title><![CDATA[理解GBDT及小试牛刀]]></title><description><![CDATA[什么是GBDT？ DT－Decision Tree决策树，GB是Gradient Boosting，是一种学习策略，GBDT的含义就是用Gradient Boosting的策略训练出来的DT模型。模型的结果是一组回归分类树组合(CART Tree Ensemble)： T1…Tk…]]></description><link>http://allen0125.github.io/use-gbdt/</link><guid isPermaLink="false">http://allen0125.github.io/use-gbdt/</guid><pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;什么是GBDT？&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Allen's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>http://allen0125.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 25 Mar 2021 02:46:47 GMT</lastBuildDate><item><title><![CDATA[理解GBDT及小试牛刀]]></title><description><![CDATA[什么是GBDT？ DT－Decision Tree决策树，GB是Gradient Boosting，是一种学习策略，GBDT的含义就是用Gradient Boosting的策略训练出来的DT模型。模型的结果是一组回归分类树组合(CART Tree Ensemble)： T1…Tk…]]></description><link>http://allen0125.github.io/use-gbdt/</link><guid isPermaLink="false">http://allen0125.github.io/use-gbdt/</guid><pubDate>Tue, 23 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;什么是GBDT？&lt;/h2&gt;
 &lt;p&gt;DT－Decision Tree决策树，GB是Gradient Boosting，是一种学习策略，GBDT的含义就是用Gradient Boosting的策略训练出来的DT模型。模型的结果是一组回归分类树组合(CART Tree Ensemble)： T1…Tk。其中 Tj 学习的是之前 j-1 棵树预测结果的残差，这种思想就像准备考试前的复习，先做一遍习题册，然后把做错的题目挑出来，在做一次，然后把做错的题目挑出来在做一次，经过反复多轮训练，取得最好的成绩。&lt;/p&gt;
 &lt;p&gt;而模型最后的输出，是一个样本在各个树中输出的结果的和。&lt;/p&gt;
 &lt;h2&gt;GBDT + LR ?&lt;/h2&gt;
@@ -11,8 +11,16 @@
 &lt;p&gt;AG News 496,835 条来自 AG 新闻语料库 4 大类别超过 2000 个新闻源的新闻文章，数据集仅仅援用了标题和描述字段。 每个类别分别拥有 30,000 个训练样本及 1900 个测试样本。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1509.01626&quot;&gt;引文&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://s3.amazonaws.com/fast-ai-nlp/ag_news_csv.tgz&quot;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;数据处理，文本转换向量&lt;/h3&gt;
+&lt;p&gt;由于选用的数据为英文语料数据，所以不存在中文语料数据的切词问题，大大简化了数据处理过程与数据处理复杂程度。为了练习数据处理，这次数据处理使用三种方法：1、使用sklearn完成tf-idf的词袋模型，2、使 用gensim  的word2vec 工具完成数据转换为数据向量，3、使用keras-bert完成数据转换。&lt;/p&gt;
+&lt;p&gt;完成数据处理后将得到三份特征数据，3份特征数据分别使用GBDT和GBDT+LR进行分类训练，得到6个分类模型，最后可以进行多维度对比。&lt;/p&gt;
+&lt;p&gt;数据集本身就划分了训练集及测试集，所以在数据处理过程中无需在切分数据。完成数据转换向量之后即可开始搭建模型进行训练及验证。&lt;/p&gt;
 &lt;h3&gt;单独训练 GBDT 查看过拟合现象:&lt;/h3&gt;
-&lt;h3&gt;结合 GBDT 和 LR 对比单独使用 GBDT 查看是否还存在过拟合现象？&lt;/h3&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h3&gt;结合 GBDT 和 LR 对比单独使用 GBDT 查看是否还存在过拟合现象：&lt;/h3&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h3&gt;多种模型多维度对比：&lt;/h3&gt;
+&lt;p&gt;TODO&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30339807&quot;&gt;参考&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[驾照增驾D摩托车驾驶资格过程回顾]]></title><description><![CDATA[为什么想要增驾D？ 小时候坐过我爸摩托的油箱上面，我爸给我买过小朋友的头盔，从小就喜欢。 现在有自行车，骑长途最多就骑过30公里，菜腿已经很累了。 周末骑摩托去郊区吹风，想想就很棒。 在北京没有汽车/新能源指标，京B的摩托相对容易Get，京A…]]></description><link>http://allen0125.github.io/motorcycle-driving-licence/</link><guid isPermaLink="false">http://allen0125.github.io/motorcycle-driving-licence/</guid><pubDate>Sun, 06 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
